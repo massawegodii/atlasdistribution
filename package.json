@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "npm serve",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:atlasdistribution": "node dist/atlasdistribution/server/server.mjs"
@@ -21,6 +23,8 @@
     "@angular/platform-server": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@angular/ssr": "^18.2.5",
+    "@vitejs/plugin-basic-ssl": "^1.1.0",
+    "bootstrap": "^5.3.3",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
